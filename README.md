@@ -1,5 +1,5 @@
 # iftop-telegraf
-Collect iftop metrics and send them via telegraf format (and then import them how you like - I use Influx/Grafana)
+Collect iftop metrics and send them via telegraf influx format (and then import them how you like - I use Influx/Grafana)
 
 # To install
 
