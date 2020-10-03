@@ -1,5 +1,5 @@
 # iftop-telegraf
-Collect iftop metrics and send them via telegraf format (and then import them how you like
+Collect iftop metrics and send them via telegraf format (and then import them how you like - I use Influx/Grafana)
 
 # To install
 
@@ -25,3 +25,7 @@ hosts,sender=236.24.186.35.bc.googleusercontent.com,receiver=nest-driveway-at-st
 
  - Now if you're using influx db and grafana you'll see under the "telegraf" database (or however you've configured it a new measurement called "hosts", the rates are bits per second
  
+
+# Notes
+
+I have tested this on MacOS and FreeBSD (for my pfSense setup)
