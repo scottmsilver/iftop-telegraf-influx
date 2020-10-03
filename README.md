@@ -4,8 +4,8 @@ Collect iftop metrics and send them via telegraf format (and then import them ho
 # To install
 
  - Clone this repository
- - Install iftop in the usal way.
- - Look at iftop_telegraf.sh and update the interface name and the path to iftop.
+ - Install iftop in the usal way via your favorite package manager.
+ - Look at iftop_telegraf.sh and update the interface name - typically your LAN intefface -- and the path to iftop.
  - Test this by running iftop_telegraf.sh
 
 ```
