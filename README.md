@@ -1,11 +1,12 @@
-# iftop-telegraf
+# iftop-telegraf-influx
 Collect iftop metrics and send them via telegraf influx format (and then import them how you like - I use Influx/Grafana)
 
 # To install
 
  - Clone this repository
+ - Install telegraf if you haven't already.
  - Install iftop in the usal way via your favorite package manager.
- - Look at iftop_telegraf.sh and update the interface name - typically your LAN intefface -- and the path to iftop.
+ - Look at iftop_telegraf.sh and update the interface name - typically your LAN interface -- and the path to iftop. Mine is igb1.
  - Test this by running iftop_telegraf.sh
 
 ```
