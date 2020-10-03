@@ -36,7 +36,7 @@ hosts,sender=236.24.186.35.bc.googleusercontent.com,receiver=nest-driveway-at-st
 
 # Example Graph
 
-https://raw.githubusercontent.com/scottmsilver/iftop-telegraf-influx/main/Screenshot%202020-10-03%20at%201.17.41%20PM.png
+![Example Dashboard Showing Query](https://raw.githubusercontent.com/scottmsilver/iftop-telegraf-influx/main/Screenshot%202020-10-03%20at%201.17.41%20PM.png)
 
 # Notes
 
