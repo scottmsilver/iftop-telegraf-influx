@@ -17,7 +17,7 @@ $ ./iftop_telegraf.sh
 hosts,sender=236.24.186.35.bc.googleusercontent.com,receiver=nest-driveway-at-street.localdomain sendRate=15200.0,receiveRate=1070000.0
  ```
 
- - Set up your telegraf.conf with the following (If you're using pfSense you can add this to your "Additional configuration" for Telegraf section.)
+ - Set up your telegraf.conf with the following (If you're using pfSense you can add this to your "Additional configuration" for Telegraf section.). Update the commands path to the path to your script.
   
 ```
 [[inputs.exec]]
