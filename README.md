@@ -33,6 +33,12 @@ hosts,sender=236.24.186.35.bc.googleusercontent.com,receiver=nest-driveway-at-st
 - First create a datasource for Telegraf. Telegraf will put the data in a database called "telegraf" which
 - Now look for the measurement called "hosts." You can see below for an example query
 - The data are in bits per second.
+- example Grafana query
+
+```
+
+
+```
 
 # Example Graph
 
