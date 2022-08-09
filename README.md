@@ -33,11 +33,16 @@ hosts,sender=236.24.186.35.bc.googleusercontent.com,receiver=nest-driveway-at-st
 - First create a datasource for Telegraf. Telegraf will put the data in a database called "telegraf" which
 - Now look for the measurement called "hosts." You can see below for an example query
 - The data are in bits per second.
-- example Grafana query
+- example InfluxQL query used in Grafana
 
 ```
-
-
+from(bucket: "telegraf")
+  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
+  |> filter(fn: (r) => r["_measurement"] == "hosts")
+  |> filter(fn: (r) => r["_field"] == "receiveRate")
+  |> group(columns: ["receiver"])
+  |> aggregateWindow(every: v.windowPeriod, fn: mean, createEmpty: false)
+  |> yield(name: "mean")
 ```
 
 # Example Graph
